@@ -1,11 +1,11 @@
-import { useEffect } from "react";
-import { api } from "../../services/api";
-import { Container } from "./styles";
+import { useEffect } from 'react';
+import { api } from '../../services/api';
+import { Container } from './styles';
 
 export function TransactionsTable() {
-  useEffect(() =>{
+  useEffect(() => {
     api.get('transactions')
-    .then(response => console.log(response.data))
+      .then((response) => console.log(response.data));
   }, []);
 
   return (
@@ -34,5 +34,5 @@ export function TransactionsTable() {
         </tbody>
       </table>
     </Container>
-  )
+  );
 }

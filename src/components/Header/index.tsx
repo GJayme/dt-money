@@ -2,7 +2,7 @@ import logoImg from '../../assets/logo.svg';
 import { Container, Content } from './styles';
 
 export function Header() {
-  return(
+  return (
     <Container>
       <Content>
         <img src={logoImg} alt="dt money" />
@@ -11,5 +11,5 @@ export function Header() {
         </button>
       </Content>
     </Container>
-  )
+  );
 }
