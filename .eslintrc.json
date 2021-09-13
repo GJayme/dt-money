@@ -6,7 +6,8 @@
     "extends": [
         "plugin:react/recommended",
         "airbnb",
-        "plugin:react/jsx-runtime"
+        //TODO: ver pq n esta rodando com esse plugin, se rodar tirar as duas rules que add para poder compilar.
+        // "plugin:react/jsx-runtime"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -31,6 +32,10 @@
         "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
         "import/extensions": [ "error", "ignorePackages", { "ts": "never", "tsx": "never" } ],
         // "@typescript-eslint/explicit-function-return-type": [ "error", { "allowExpressions": true } ],
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+
+        //TODO: remover essas rules caso o extends novo funcione
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off"
     }
 }
